@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form 2</title>
+
+    <style>
+
+        ul
+        {
+            list-style: none;
+            display: flex;
+            column-gap: 5%;
+        }
+    
+    
+        a
+        {
+            text-decoration: none;
+            color:rgb(52, 131, 223);
+        }
+
+        #required::after
+        {
+            content:" *";
+            color: red;
+            font-size: 12px;
+        }
+
+        input
+        {
+            box-sizing: border-box;
+            height: 40px;
+
+            margin-top: 12px;
+        }
+
+        select
+        {
+            height: 40px;
+
+            margin-top: 12px;
+
+            background-color: rgba(255, 255, 255, 0);
+            
+        }
+
+       </style>
+
+</head>
+<body>
+    <header>
+        <nav>
+                       
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="application-form2.html">Form</a></li>
+
+            </ul>
+    
+        </nav>
+    </header>
+
+
+    <section style="width: 50%;"> <!-- width to control size of Form-->
+        <form>
+            <h1>
+                Application Form
+            </h1>
+
+            <p>
+                Fill in your details
+            </p>
+
+<!--Row 1-->
+
+            <div style="display: flex;column-gap: 10%; margin-bottom: 20px;">
+                <div style="width: 40%;">
+                    <label id="required"> First Name</label>
+                    <input type="text" placeholder="Enter first name" style="width:100%; height: 40px;">
+                </div>
+
+                <div style="width: 40%;">
+                    <label id="required">Last Name</label>
+                    <input type="text" placeholder="Enter last name" style="width:100%;">
+                </div>
+            </div>
+
+<!--Row 2-->
+
+            <div style="display: flex;column-gap: 10%; margin-bottom: 20px;">
+
+                <div style="width: 40%;">
+                    
+                    <label id="required" style="display: block;"> Gender</label>
+
+                    <select name="gender" id="gender" style="width: 100%;">
+
+                        <option value="male">
+                            Male
+                        </option>
+
+                        <option value="female">
+                            Female
+                        </option>
+
+                    </select>
+                    
+                </div>
+
+                <div style="width: 40%;">
+                    <label id="required">Date of Birth</label>
+                    <input type="date" placeholder="dd/mm/yyyy" style="width:100%;">
+                </div>
+            </div>
+
+<!--Row 3-->
+
+            <div style="display: flex;column-gap: 10%; margin-bottom: 20px;">
+
+                <div style="width: 40%;">
+                    
+                    <label id="required" style="display: block;">Email Address</label>
+
+                    <input type="text" placeholder="Email Address" style="width:100%; height: 40px;">
+
+                    
+                    
+                </div>
+
+                <div style="width: 40%;">
+                    <label id="required">Education Level</label>
+                    <select name="education-level" id="education-level" style="width: 100%;">
+
+                        <option value="Bsc">
+                            Bsc
+                        </option>
+
+                        <option value="Msc">
+                            Msc
+                        </option>
+
+                        <option value="Diploma">
+                            Diploma
+                        </option>
+
+                        <option value="Doctorate (PhD)">
+                            Doctorate (PhD)
+                        </option>
+
+                        <option value="High School/ Secondary School">
+                            High School/ Secondary School
+                        </option>
+
+                        <option value="Undergraduate">
+                            Under Graduate
+                        </option>
+
+                        <option value="Junior/ Middle School">
+                            Junior/ Middle School
+                        </option>
+
+                        <option value="Post Graduate">
+                            Post Graduate
+                        </option>
+
+                    </select>
+                </div>
+            </div>
+            
+<!--Row 4-->
+
+            <div style="display: flex;column-gap: 10%; margin-bottom: 20px;">
+
+                <div style="width: 40%;">
+                    <label id="required">Country</label>
+                    <select name="Country" id="Country" style="width: 100%;">
+
+                        <option value="Afghanistan">
+                            Afghanistan
+                        </option>
+
+                        <option value="Albania">
+                            Albania
+                        </option>
+
+                        <option value="Algeria">
+                            Algeria
+                        </option>
+
+                        <option value="Andorra">
+                            Andorra
+                        </option>
+
+                        <option value="Angola">
+                            Angola
+                        </option>
+
+                        <option value="Antigua">
+                            Antigua
+                        </option>
+
+                        <option value="Argentina">
+                            Argentina
+                        </option>
+
+                        <option value="Nigeria">
+                            Nigeria
+                        </option>
+
+                    </select>
+                </div>
+
+                <div style="width: 40%;">
+                    
+                    <label id="required" style="display: block;">State/City of Residence</label>
+
+                    <input type="text" placeholder="Enter your state of residence" style="width:100%; height: 40px;"> 
+                    
+                </div>
+
+            </div>
+
+<!--Row 5-->
+
+            <div style="display: flex;column-gap: 10%; margin-bottom: 20px;">
+
+                <div style="width: 40%;">
+                    <label id="required">Employment Status</label>
+                    <select name="Country" id="Country" style="width: 100%;">
+
+                        <option value="Employed">
+                            Employed
+                        </option>
+
+                        <option value="UnEmployed">
+                            UnEmployed
+                        </option>
+
+                        <option value="Self-Employed">
+                            Self-Employed
+                        </option>
+
+                    </select>
+                </div>
+
+                <div style="width: 40%;">
+                    
+                    <label id="required" style="display: block;">Phone Number</label>
+
+                    <input type="tel" placeholder="08154387000" style="width:100%; height: 40px;"> 
+                    
+                </div>
+
+            </div>
+
+<!--Row 6-->
+
+            <div style="display: flex;column-gap: 10%; margin-bottom: 20px;">
+
+                <div style="width: 40%;">
+                    <label id="required">Choose School</label>
+                    <select name="Choose School" id="Choose School" style="width: 100%;">
+
+                        <option value="School of Creative Economy">
+                            School of Creative Economy
+                        </option>
+
+                        <option value="School of Business">
+                            School of Business
+                        </option>
+
+                    </select>
+                </div>
+
+                <div style="width: 40%;">
+
+                    <label id="required">Choose School</label>
+
+                    <select name="Choose Course of Study" id="Choose Course of Study" style="width: 100%;">
+
+                        <option value="Select Course">
+                            Select Course
+                        </option>
+
+                    </select>
+                    
+                </div>
+
+            </div>
+
+<!--Row 7-->
+
+            <div style="display: flex;column-gap: 10%; margin-bottom: 20px;">
+
+                <div style="width: 40%;">
+                    <label id="required">How did you hear about us?</label>
+                    <select name="Select channel" id="Select channel" style="width: 100%;">
+
+                        <option value="Select channel">
+                            Select channel
+                        </option>
+
+                        <option value="Twitter">
+                            Twitter
+                        </option>
+
+                        <option value="Facebook">
+                            Facebook
+                        </option>
+
+                        <option value="Linkedin">
+                            Linkedin
+                        </option>
+
+                        <option value="Youtube">
+                            Youtube
+                        </option>
+
+                        <option value="Friend">
+                            Friend
+                        </option>
+
+                        <option value="WhatsApp">
+                            WhatsApp
+                        </option>
+
+                        <option value="Instagram">
+                            Instagram
+                        </option>
+
+                        <option value="Bill Board">
+                            Bill Board
+                        </option>
+
+                    </select>
+                </div>
+
+                <div style="width: 40%;">
+                    
+                    <label style="display: block;">Scholarship/Discount Code (optional)</label>
+
+                    <input type="tel" placeholder="Scholarship or student ID or discount codes" style="width:100%; height: 40px;"> 
+                    
+                </div>
+
+            </div>
+
+        </form>
+
+        <p>By clicking continue, i agree to <a href="Terms of Use">Terms of Use</a> and acknowledge that i have read the <a href="Privacy Policy">Privacy Policy.</a></p>
+
+        <div>
+
+            <!--input (40%) plus column gap (10%) plus input 2 (40%)-->
+
+            <button style="color: whitesmoke; background-color: rgb(85, 85, 228); width: 90%; height: 40px; border-radius: 4px;"><b>Proceed</b></button>
+            
+            
+
+        </div>
+
+        <div style="width: 90%; display: flex; justify-content: center;">
+
+             <p>Already have an account? <a href="Sign in">Sign in</a></p>
+        
+        </div>
+
+    </section>
+    
+</body>
+</html>
